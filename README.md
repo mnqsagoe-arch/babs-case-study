@@ -1,6 +1,6 @@
 # Babs: How I'm Building an AI Assistant Without Writing Code
 
-*By Michael Sagoe, Founder, Padagoe Labs. Last updated October 2026.*
+*By Michael Sagoe. Last updated October 2026.*
 
 ## The short version
 
