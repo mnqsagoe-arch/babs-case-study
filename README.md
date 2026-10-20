@@ -69,8 +69,33 @@ I had every place Babs calls an AI model audited and mapped. Now I'm comparing o
 - Put cost guardrails in before automating tests.
 - Audit which model does which job earlier, before adding more features to the same expensive one.
 
-## What's next
-A capped beta, then mail connections, billing and voice output.
+## Where I'm taking it
+
+I plan in phases and move between them on evidence, not on dates.
+
+**Now: make it affordable and trustworthy.** Finish the core features, match each AI model to the job it needs to do, and test the safety side properly, including attempts to trick the assistant with hidden instructions.
+
+**Next: a small, capped beta.** Open Babs to a small group of real users, add mail connections, billing and spoken replies, and learn from actual use before spending on scale. The beta is capped partly because reading people's email requires approval from the email providers, and I'd rather learn with a small group while that gets sorted out.
+
+**Later: grow, then hire.** Once Babs earns money, I'll hire engineers and bring more of the product in-house. Babs also runs on a shared engine, so the same foundation can power other products down the line.
+
+**The gates between phases**
+- I know what it costs to serve one user.
+- The safety tests pass.
+- Every feature has been checked against the code it touches.
+
+## How I lead the product
+- **Evidence over opinion.** I make decisions from real data, like pulling production logs before dropping a provider.
+- **Buy before build.** I use managed Azure services where they fit, because I'm running this as a one-person show and need to manage it myself.
+- **Cost and safety are gates.** They aren't things I clean up after launch.
+- **Fix the whole problem.** I'd rather build the permanent fix than patch one case at a time.
+
+## Risks I'm managing
+- **Cost.** Spending rules are in the project, and budget alerts and per-user cost tracking come before I open the beta.
+- **Depending on one AI provider.** I kept the backup code behind a switch and added retries, so I can bring the second provider back if the data ever says I should.
+- **Email access approvals.** The capped beta lets me proceed while approval is worked out.
+- **Quality of AI-written code.** Independent verification, real-world testing and versioned releases catch what automated checks miss.
+- **Safety.** Crisis handling sits outside the model, and calendar changes need my approval.
 
 ## Skills this shows
 AI product ownership, Azure AI planning, model selection and cost control, responsible AI, testing and verification, release management, and leading AI-assisted engineering. I'm currently preparing for Microsoft AI-103.
